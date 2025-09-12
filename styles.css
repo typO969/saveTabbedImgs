@@ -1,0 +1,188 @@
+/*
+ * Overrides
+ */
+
+* {
+  box-sizing: border-box;
+  color: #888;
+}
+
+body {
+  width: 20em;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 16px;
+  /*color: #43a0de;*/
+  color: #cc1717;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+input[type="radio"] {
+  margin: 0;
+  margin-top: 3px;
+}
+
+input[type="text"] {
+  padding: 7px 9px;
+  font-size: 13px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background: #aaa;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1em 0.5em;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button span {
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.3;
+}
+
+button:hover {
+  background: #888;
+}
+
+/*
+ * Reusable classes
+ */
+.padding {
+  padding: 1em;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.background-gray {
+  background: #f3f3f3;
+}
+
+.text-smaller {
+  font-size: 0.9em;
+}
+
+/*
+ * Components
+ */
+#files {
+  overflow-y: auto;
+  max-height: 15em;
+}
+
+#files li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 1px 0;
+}
+
+#files li a {
+  color: #aaa;
+}
+
+#files li.complete a:before {
+  content: "Done";
+  background: #43a0de;
+  color: #fff;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  margin-right: 0.5em;
+}
+
+#files li.error a {
+  color: #f66;
+}
+
+#files li.error a:before {
+  content: "Error";
+  background: #f66;
+  color: #fff;
+  display: inline-block;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+}
+
+#download {
+  background: #43a0de;
+}
+
+#download:hover {
+  background: #175681;
+}
+
+#download-options li {
+  padding: 3px 0;
+}
+
+#download-options input[type="radio"] {
+  width: 15px;
+  margin-right: 5px;
+  float: left;
+}
+
+.path-wrapper {
+  overflow: hidden;
+}
+
+.path-wrapper input {
+  width: 100%;
+  margin-top: 6px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+.path-wrapper input:disabled {
+  opacity: 0.3;
+}
+
+button.icon-button {
+  background: #fff;
+  padding: 4px;
+  width: auto;
+  font-size: 0;
+}
+
+button.icon-button img {
+  width: 12px;
+}
+
+.progress {
+  cursor: pointer;
+}
+
+.progress-count {
+  font-size: 1.6em;
+}

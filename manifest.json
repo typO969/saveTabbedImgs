@@ -1,0 +1,31 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "name": "Save Tabbed Images",
+    "description": "Save images currently opened in tabs.",
+    "version": "1.0.0",
+    "minimum_chrome_version": "88",
+    "manifest_version": 3,
+    "permissions": [
+        "downloads",
+        "tabs",
+        "activeTab",
+        "webRequest",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "img/icon16.png"
+    },
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "incognito": "split"
+}
