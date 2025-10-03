@@ -11,7 +11,7 @@
 ##
 
 ## II. METHODOLOGY
-Having been completley oblivious that the original extension source was here on github, I created this version/variation for myself around September of 2024 for the challenge, experience, and knowledge. It ranks as my second completed extension and first for manifest 3.
+Having been completley oblivious that the original extension source was here on github (https://github.com/kevinsqi/save_tabbed_images), I created this version/variation for myself around September of 2024 for the challenge, experience, and knowledge. It ranks as my second completed extension and first for manifest 3.
 It began with updating the manifest to version 3 and quickly realized I would have to modify and add a significant amount of JS to compliment the other changes google made between manifests.
 Just for funsies, I did some quick file comparisons in Np++, between ***background.js*** files:
 ```
